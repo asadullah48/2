@@ -1,0 +1,20 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "home work",
+  "main": "hwk2.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asadullah48/2.git"
+  },
+  "author": "00458550",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asadullah48/2/issues"
+  },
+  "homepage": "https://github.com/asadullah48/2#readme"
+}

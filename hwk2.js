@@ -16,7 +16,7 @@ adjust the price based on the new color (implement your own logic, e.g., increas
 4. Display each product's name, price, stock, and available colors. Iterate through the
 products array and print each product's details.*/
 // ============================================= STEP # 2 ====================================================================
-var products = [
+const products = [
     {
         name: "Smartphone",
         price: 60000,
@@ -58,20 +58,21 @@ function changeColor(products, newColor) {
         products.price -= products.price * 0.10;
     }
     else {
-        console.log("Sorry! this ".concat(newColor, " is not available "));
+        console.log(`Sorry! this ${newColor} is not available `);
     }
     ;
 }
 ;
 function displayProductDetails(products) {
-    products.forEach(function (products) {
-        console.log("Name: ".concat(products.name));
-        console.log("Price: ".concat(products.price));
-        console.log("Stock: ".concat(products.inventory.stock));
-        console.log("Available colors: ".concat(products.inventory.colorOption));
+    products.forEach(products => {
+        console.log(`Name: ${products.name}`);
+        console.log(`Price: ${products.price}`);
+        console.log(`Stock: ${products.inventory.stock}`);
+        console.log(`Available colors: ${products.inventory.colorOption}`);
     });
 }
 changeColor(products[0], "Black");
 changeColor(products[1], 'Red');
 changeColor(products[2], "Silver");
 displayProductDetails(products);
+export {};
